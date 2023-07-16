@@ -88,11 +88,32 @@ img {
 }
 
 .card-component__btn {
-  align-self: flex-start;
+  align-self: start;
   padding: 0.75rem 2rem;
-  border: 3px solid var(--very-light-gray);
+  border: 2px solid var(--very-light-gray);
   border-radius: 2rem;
   text-decoration: none;
   background-color: var(--very-light-gray);
   cursor: pointer;
+}
+
+@media only screen and (min-width: 55rem) {
+  .card-component {
+    max-width: 60rem;
+    display: flex;
+    font-size: 0.9375rem;
+    min-height: 32rem;
+  }
+
+  .card-component__container {
+    padding: 3.25rem;
+  }
+
+  .card-component__title {
+    font-size: 2.5rem;
+  }
+
+  .card-component__btn {
+    margin-top: auto;
+  }
 }
